@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned and standardized staging model for e-commerce orders."
+    columns:
+      - name: order_id
+        description: "The primary key of the order table."
+        tests:
+          - unique
+          - not_null
